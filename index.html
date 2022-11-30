@@ -13,11 +13,14 @@
             <div class="nav">
                 <nav>
                     <img src="images/logo.png" alt="Logo">
-                    <a href="">Home</a>
-                    <a href="">About Us</a>
-                    <a href="">Services</a>
-                    <a href="">Team</a>
-                    <a href="">Contact</a>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="#about-us-container">About Us</a></li>
+                        <li><a href="#our-services-container">Services</a></li>
+                        <li><a href="#our-team-container">Team</a></li>
+                        <li><a href="#contact-us-container">Contact</a></li>
+                    </ul>
+                
                     <form action="index.html" method="post">
                         <input id="search" type="search" placeholder="Search">
                     </form>
@@ -36,34 +39,142 @@
     </header>
 
     <main>
-        <nav id="about-us-container">
+        <div id="about-us-container">
+            <div class="about-us-content">
+                <div class="about-us-photo">
+                    <img src="images/about-us.jpg" alt="About Us">
+                </div>
+                <div class="about-us-text">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum cum tenetur accusamus accusantium at sunt? Earum doloremque dignissimos laboriosam inventore molestias tenetur alias quas, error dolore exercitationem. Dolores, nemo fugit?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae cumque ad dolorum minus perferendis. Temporibus magnam maxime cumque quidem libero in odit ut exercitationem, assumenda impedit alias est rem iste?</p>
+                </div>
+            </div>
+        </div>
 
-        </nav>
+        <div id="our-services-container">
+            <div class="our-services-header">
+                <h2>Our Services</h2>
+            </div>
+            <div class="digital-transformation-container">
+                <img src="images/digital.jpg" alt="Digital Transformation">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis quidem veritatis quia. Aliquid labore quidem fuga obcaecati repellendus ducimus, magnam rerum quasi delectus tenetur nulla eos tempora enim voluptatibus.</p>
+                <button id="digital-plans-button"><h4>Digital Plans &#9658;</h4></button>
+            </div>
+            <div class="marketing-container">
+                <img src="images/marketing.jpg" alt="Marketing">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis quidem veritatis quia. Aliquid labore quidem fuga obcaecati repellendus ducimus, magnam rerum quasi delectus tenetur nulla eos tempora enim voluptatibus.</p>
+                <button id="marketing-button"><h4>Marketing Plans &#9658;</h4></button>
+            </div>
+            <div class="video-production-container">
+                <img src="images/video.jpg" alt="Video Production">
+                <h3>Video Production</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis quidem veritatis quia. Aliquid labore quidem fuga obcaecati repellendus ducimus, magnam rerum quasi delectus tenetur nulla eos tempora enim voluptatibus.</p>
+                <button id="video-production-button"><h4>Video Plans &#9658;</h4></button>
+            </div>
+            <div class="web-development-container">
+                <img src="images/web.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis quidem veritatis quia. Aliquid labore quidem fuga obcaecati repellendus ducimus, magnam rerum quasi delectus tenetur nulla eos tempora enim voluptatibus.</p>
+                <button id="web-development-button"><h4>Web Plans &#9658;</h4></button>
+            </div>
+            <div id="print-container">
+                <img src="images/print.jpg" alt="Print">
+                <div id="print-content">
+                <h3>Print</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sint fuga a mollitia minus, enim iusto nemo dolor. Incidunt, repellendus eius. Enim, consequuntur. Incidunt accusamus odit, deleniti repellat voluptatibus cum!</p>
+                <button id="print-button"><h4>Print Plans &#9658;</h4></button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="our-vision-container">
+            <img src="images/vision.jpg" alt="Our Vision">
+            <div id="our-vision-content">
+            <h3>Our Vision</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sint fuga a mollitia minus, enim iusto nemo dolor. Incidunt, repellendus eius. Enim, consequuntur. Incidunt accusamus odit, deleniti repellat voluptatibus cum!</p>
+            </div>
+        </div>
 
-        <nav id="our-services-container">
+        <div id="our-team-container">
+            <div class="our-team-header">
+                <h2>Our Team</h2>
+            </div>
+            <div class="john-image">
+                <img src="images/john.jpg" alt="John Doe">
+            </div>
+            <div class="john-text">
+                <h3>John Doe</h3>
+                <h4>CEO and Co-owner</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ad excepturi molestias hic! A ipsam hic illo nihil necessitatibus odit delectus odio. Sed pariatur labore placeat cum aliquid, quasi commodi.</p>
+            </div>
+            <div class="bob-image">
+                <img src="images/bob.jpg" alt="Bob Rite">
+            </div>
+            <div class="bob-text">
+                <h3>Bob Rite</h3>
+                <h4>CFO and Co-owner</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita impedit nam quaerat consequuntur debitis eligendi nisi nobis, libero, alias tempore earum provident quos nulla cupiditate magni eveniet ea quas repudiandae.</p>
+            </div>
+        </div>
 
-        </nav>
-
-        <nav id="our-vision-container">
-
-        </nav>
-
-        <nav id="out-team-container">
-
-        </nav>
-
-        <nav id="contact-us-container">
-
-        </nav>
+        <div id="contact-us-container">
+            <div class="contact-us-header">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="message-container">
+                <h2>Send us a message</h2>
+                <form action="index.html" method="post">
+                    <label for="fullname">Full Name</label>
+                    <input id="fullname" type="text">
+                </form>
+                <form action="index.html" method="post">
+                    <label for="Email">Email</label>
+                    <input id="Email" type="text">
+                </form>
+                <form action="index.html" method="post">
+                    <label for="text">Message</label>
+                    <input id="text" type="text">
+                </form>
+                <button>Send</button>
+            </div>
+            <div class="location-container">
+                <h2>Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.2660232705093!2d-75.7574119196877!3d45.3487360203401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669674933610!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="hours-container">
+                <h2>Hours of operation</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Monday - Friday</td>
+                        <td>9 AM - 6 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>Closed</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <nav class="footer container">
-            <nav class="footer text">
+        <div class="footer container">
+            <div class="footer text">
                 <p>&copy; Copyright Three Star Media, 2020</p>
                 <p>All images are taken from Unsplash</p>
-            </nav>
-        </nav>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
