@@ -27,6 +27,8 @@
         font-size: 1.5rem;
     }
 
+    /* wrapper div added to divs that didn't take up the full width of the screen */
+    
     .wrapper{
         display: block;
         margin: auto;
@@ -180,7 +182,6 @@
         width: 100%;
     }
 
-
     .our-vision{
         background-image: url("../images/vision.jpg");
         background-position: center;
@@ -299,14 +300,11 @@
 
     /* media queries */
 
-    /* dont use max width for media queries */
-
     @media screen and (min-width:760px){
         
         .wrapper{
             display: block;
             margin: auto;
-            max-width: 1200px;
         }
 
         nav ul{
@@ -403,6 +401,8 @@
             flex: 100%;
             order: 0;
         }
+
+        /* had to use flex basis 49% because 50% would push next div down */
 
         .john-image{
             flex-basis: 49%;
