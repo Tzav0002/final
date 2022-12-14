@@ -1,111 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <!-- CSS Reset -->
     <link rel="stylesheet" href="css/reset.css">
 
     <!-- put google fonts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
     <title>Final</title>
 </head>
+
 <body>
     <header>
         <div class="banner">
             <div class="nav">
                 <nav>
                     <ul>
-                        <li><img src="images/logo.png" alt="Logo"></li>
+                        <div class="image-container">
+                            <li><img src="images/logo.png" alt="Logo"></li>
+                        </div>
+                        <!-- <li><img src="images/logo.png" alt="Logo"></li> -->
                         <li><a href="">Home</a></li>
                         <li><a href="#about-us-container">About Us</a></li>
                         <li><a href="#our-services-container">Services</a></li>
                         <li><a href="#our-team-container">Team</a></li>
                         <li><a href="#contact-us-container">Contact</a></li>
-                        <li><form action="index.html" method="post">
-                            <input id="search" type="search" placeholder="Search">
-                        </form></li>
-                        <li><button id="search-button">&#x1F50E;&#xFE0E;</button></li>
+                        <div class="search">
+                            <li>
+                                <form action="index.html" method="post">
+                                    <input id="search" type="search"
+                                        placeholder="Search">
+                                </form>
+                            </li>
+                        </div>
+                        <div class="search">
+                            <li><button
+                                    id="search-button">&#x1F50E;&#xFE0E;</button>
+                            </li>
+                        </div>
                     </ul>
 
                     <!-- a href links to div containers allowing to jump to their sections on the page -->
                 </nav>
             </div>
         </div>
+        <div class="header-transparent"></div>
         <div class="header-image">
-            <img src="images/main-banner.jpg" alt="Header Image">
             <div class="welcome">
                 <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam pariatur vero aperiam voluptatem aspernatur? Laborum fuga illo ducimus, ullam a, quibusdam sint pariatur ipsam aut, tempora exercitationem repellendus sapiente!</p>
-                <button id="connect-button"><a href="#contact-us-container">Connect with us &#9658;</a></button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae quisquam pariatur vero aperiam voluptatem aspernatur?
+                    Laborum fuga illo ducimus, ullam a, quibusdam sint pariatur
+                    ipsam aut, tempora exercitationem repellendus sapiente!</p>
+                <button id="connect-button"><a
+                        href="#contact-us-container">Connect with us
+                        &#9658;</a></button>
             </div>
         </div>
     </header>
 
     <main>
-        <div id="about-us-container">
-            <div class="about-us-content">
+        <div class="about-us" id="about-us-container">
+            <div class="about-us-content wrapper">
                 <div class="about-us-photo">
                     <img src="images/about-us.jpg" alt="About Us">
                 </div>
                 <div class="about-us-text">
                     <h2>About Us</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum cum tenetur accusamus accusantium at sunt? Earum doloremque dignissimos laboriosam inventore molestias tenetur alias quas, error dolore exercitationem. Dolores, nemo fugit?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae cumque ad dolorum minus perferendis. Temporibus magnam maxime cumque quidem libero in odit ut exercitationem, assumenda impedit alias est rem iste?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Ipsum cum tenetur accusamus accusantium at sunt? Earum
+                        doloremque dignissimos laboriosam inventore molestias
+                        tenetur alias quas, error dolore exercitationem.
+                        Dolores, nemo fugit?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quae cumque ad dolorum minus perferendis. Temporibus
+                        magnam maxime cumque quidem libero in odit ut
+                        exercitationem, assumenda impedit alias est rem iste?
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div id="our-services-container">
+        <div class="our-services wrapper" id="our-services-container">
             <div class="our-services-header">
                 <h2>Our Services</h2>
             </div>
             <div class="digital-transformation-container">
                 <img src="images/digital.jpg" alt="Digital Transformation">
                 <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis quidem veritatis quia. Aliquid labore quidem fuga obcaecati repellendus ducimus, magnam rerum quasi delectus tenetur nulla eos tempora enim voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                    nobis quidem veritatis quia. Aliquid labore quidem fuga
+                    obcaecati repellendus ducimus, magnam rerum quasi delectus
+                    tenetur nulla eos tempora enim voluptatibus.</p>
                 <button id="digital-plans-button">Digital Plans &#9658;</button>
             </div>
             <div class="marketing-container">
                 <img src="images/marketing.jpg" alt="Marketing">
                 <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis quidem veritatis quia. Aliquid labore quidem fuga obcaecati repellendus ducimus, magnam rerum quasi delectus tenetur nulla eos tempora enim voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                    nobis quidem veritatis quia. Aliquid labore quidem fuga
+                    obcaecati repellendus ducimus, magnam rerum quasi delectus
+                    tenetur nulla eos tempora enim voluptatibus.</p>
                 <button id="marketing-button">Marketing Plans &#9658;</button>
             </div>
             <div class="video-production-container">
                 <img src="images/video.jpg" alt="Video Production">
                 <h3>Video Production</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis quidem veritatis quia. Aliquid labore quidem fuga obcaecati repellendus ducimus, magnam rerum quasi delectus tenetur nulla eos tempora enim voluptatibus.</p>
-                <button id="video-production-button">Video Plans &#9658;</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                    nobis quidem veritatis quia. Aliquid labore quidem fuga
+                    obcaecati repellendus ducimus, magnam rerum quasi delectus
+                    tenetur nulla eos tempora enim voluptatibus.</p>
+                <button id="video-production-button">Video Plans
+                    &#9658;</button>
             </div>
             <div class="web-development-container">
                 <img src="images/web.jpg" alt="Web Development">
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis quidem veritatis quia. Aliquid labore quidem fuga obcaecati repellendus ducimus, magnam rerum quasi delectus tenetur nulla eos tempora enim voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                    nobis quidem veritatis quia. Aliquid labore quidem fuga
+                    obcaecati repellendus ducimus, magnam rerum quasi delectus
+                    tenetur nulla eos tempora enim voluptatibus.</p>
                 <button id="web-development-button">Web Plans &#9658;</button>
             </div>
-            <div id="print-container">
+            <div class="print-container">
                 <img src="images/print.jpg" alt="Print">
-                <div id="print-content">
                 <h3>Print</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sint fuga a mollitia minus, enim iusto nemo dolor. Incidunt, repellendus eius. Enim, consequuntur. Incidunt accusamus odit, deleniti repellat voluptatibus cum!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequuntur sint fuga a mollitia minus, enim iusto nemo
+                    dolor. Incidunt, repellendus eius. Enim, consequuntur.
+                    Incidunt accusamus odit, deleniti repellat voluptatibus cum!
+                </p>
                 <button id="print-button">Print Plans &#9658;</button>
-                </div>
-            </div>
-        </div>
-        
-        <div id="our-vision-container">
-            <img src="images/vision.jpg" alt="Our Vision">
-            <div id="our-vision-content">
-            <h3>Our Vision</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sint fuga a mollitia minus, enim iusto nemo dolor. Incidunt, repellendus eius. Enim, consequuntur. Incidunt accusamus odit, deleniti repellat voluptatibus cum!</p>
             </div>
         </div>
 
-        <div id="our-team-container">
+        <div class="our-vision" id="our-vision-container">
+            <div class="our-vision-content">
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequuntur sint fuga a mollitia minus, enim iusto nemo
+                    dolor. Incidunt, repellendus eius. Enim, consequuntur.
+                    Incidunt accusamus odit, deleniti repellat voluptatibus cum!
+                </p>
+                <button>Learn More &#9658;</button>
+            </div>
+        </div>
+
+        <div class="our-team wrapper" id="our-team-container">
             <div class="our-team-header">
                 <h2>Our Team</h2>
             </div>
@@ -115,7 +165,10 @@
             <div class="john-text">
                 <h3>John Doe</h3>
                 <h4>CEO and Co-owner</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ad excepturi molestias hic! A ipsam hic illo nihil necessitatibus odit delectus odio. Sed pariatur labore placeat cum aliquid, quasi commodi.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Similique ad excepturi molestias hic! A ipsam hic illo nihil
+                    necessitatibus odit delectus odio. Sed pariatur labore
+                    placeat cum aliquid, quasi commodi.</p>
             </div>
             <div class="bob-image">
                 <img src="images/bob.jpg" alt="Bob Rite">
@@ -123,16 +176,19 @@
             <div class="bob-text">
                 <h3>Bob Rite</h3>
                 <h4>CFO and Co-owner</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita impedit nam quaerat consequuntur debitis eligendi nisi nobis, libero, alias tempore earum provident quos nulla cupiditate magni eveniet ea quas repudiandae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Expedita impedit nam quaerat consequuntur debitis eligendi
+                    nisi nobis, libero, alias tempore earum provident quos nulla
+                    cupiditate magni eveniet ea quas repudiandae.</p>
             </div>
         </div>
 
-        <div id="contact-us-container">
+        <div id="contact-us-container" class="contact-us wrapper">
             <div class="contact-us-header">
                 <h2>Contact Us</h2>
             </div>
             <div class="message-container">
-                <h2>Send us a message</h2>
+                <h3>Send us a message</h3>
                 <form action="index.html" method="post">
                     <label for="fullname">Full Name</label>
                     <input id="fullname" type="text">
@@ -149,43 +205,49 @@
 
                 <!-- added respective input types so that it autofills correctly (for example it will recommend my email address in the email form) -->
             </div>
-            <div class="location-container">
-                <h2>Location</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.2660232705093!2d-75.7574119196877!3d45.3487360203401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669674933610!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <!-- linked from google maps -->
-            </div>
             <div class="hours-container">
-                <h2>Hours of operation</h2>
+                <h3>Hours of operation</h3>
                 <table>
                     <thead>
-                      <tr>
-                        <th>Days</th>
-                        <th>Hours</th>
-                      </tr>
+                        <tr>
+                            <th>Days</th>
+                            <th>Hours</th>
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>Monday - Friday</td>
-                        <td>9 AM - 6 PM</td>
-                      </tr>
-                      <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                      </tr>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9 AM - 6 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                        </tr>
                     </tbody>
-                  </table>
+                </table>
+            </div>
+            <div class="location-container">
+                <h3>Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.2660232705093!2d-75.7574119196877!3d45.3487360203401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669674933610!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <!-- linked from google maps -->
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="footer container">
-            <div class="footer text">
+        <div class="footer-container">
+            <div class="footer text wrapper">
                 <p>&copy; Copyright Three Star Media, 2020</p>
                 <p>All images are taken from Unsplash</p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
